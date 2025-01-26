@@ -18,5 +18,4 @@ static void hello_exit(void)
 }
 
 module_init(hello_init);
-module_init(print_username);
 module_exit(hello_exit);
