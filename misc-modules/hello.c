@@ -8,6 +8,7 @@ MODULE_LICENSE("Dual BSD/GPL");
 static int hello_init(void)
 {
 	printk(KERN_ALERT "Hello, world\n");
+	printk(KERN_ALERT "I am syafeq-1997\n");
 	return 0;
 }
 
@@ -17,4 +18,5 @@ static void hello_exit(void)
 }
 
 module_init(hello_init);
+module_init(print_username);
 module_exit(hello_exit);
